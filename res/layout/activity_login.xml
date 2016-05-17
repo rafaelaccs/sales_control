@@ -1,0 +1,40 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sales_control.LoginActivity" >
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+    </LinearLayout>
+    
+    <TextView 
+        android:text="@string/login_txtUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    
+    <EditText 
+        android:id="@+id/login_edtUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    
+    <TextView 
+        android:text="@string/login_txtSenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    
+    <EditText 
+        android:id="@+id/login_edtSenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    
+    <Button 
+        android:id="@+id/login_btnEntrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login_btnEntrar"/>
+
+</ScrollView>
