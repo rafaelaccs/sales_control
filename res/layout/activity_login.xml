@@ -1,15 +1,15 @@
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" 
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.sales_control.LoginActivity" >
+    tools:context="com.example.sales.control.LoginActivity" >
 
-    <LinearLayout 
+  <LinearLayout 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="10dp">
-    </LinearLayout>
+  
     
     <TextView 
         android:text="@string/login_txtUsuario"
@@ -19,7 +19,8 @@
     <EditText 
         android:id="@+id/login_edtUsuario"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"/>
     
     <TextView 
         android:text="@string/login_txtSenha"
@@ -29,12 +30,14 @@
     <EditText 
         android:id="@+id/login_edtSenha"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:inputType="textPassword"/>
     
     <Button 
         android:id="@+id/login_btnEntrar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/login_btnEntrar"/>
-
+	</LinearLayout>
 </ScrollView>
