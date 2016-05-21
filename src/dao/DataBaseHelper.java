@@ -51,12 +51,12 @@ public class DataBaseHelper extends SQLiteOpenHelper{
 	public static class Tasks{
 		public static final String TABELA = "tasks";
 		public static final String _ID = "_id";
-		public static final String TASKS = "tasks";
+		public static final String TASK = "task";
 		public static final String DATE_CREATE = "date_create";
 		public static final String DATE_COMPLETED = "date_completed";
 		
 		public static final String [] COLUNAS = new String [] {
-				_ID, TASKS, DATE_CREATE, DATE_COMPLETED
+				_ID, TASK, DATE_CREATE, DATE_COMPLETED
 		};
 	}
 

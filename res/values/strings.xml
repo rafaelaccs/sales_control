@@ -6,8 +6,12 @@
     <string name="title_activity_login">Login</string>
 
     <!-- Login -->
-    <string name="login_txtUsuario">Usuário: </string>
-    <string name="login_txtSenha">Senha: </string>
-    <string name="login_btnEntrar">Entrar</string>
-    <string name="login_ckbConectado">Manter Conectado?</string>
+    <string name="login_txtUser">Usuário: </string>
+    <string name="login_txtPassword">Senha: </string>
+    <string name="login_btnLogin">Entrar</string>
+    <string name="login_ckbConected">Manter Conectado?</string>
+    
+    <!-- Validações -->
+    <string name="login_validateUser">Usuário Obrigatório</string>
+     <string name="login_validatePasword">Senha Obrigatório</string>
 </resources>
