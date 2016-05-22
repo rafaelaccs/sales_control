@@ -1,0 +1,43 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical">
+   
+       <TextView 
+         	style="@style/NameOfFields"
+        	android:text="@string/user_txtName"/>
+       
+       <EditText 
+           	android:id="@+id/user_edtName"
+         	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:inputType="text"/>
+ 
+        <TextView 
+         	style="@style/NameOfFields"
+        	android:text="@string/user_txtLogin"/>
+       
+       <EditText 
+           	android:id="@+id/user_edtLogin"
+         	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:inputType="text"/>
+
+       <TextView 
+			style="@style/NameOfFields"
+        	android:text="@string/user_txtPassword"/>
+       
+       <EditText 
+           	android:id="@+id/user_edtPassword"
+         	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:inputType="textPassword"/>
+    </LinearLayout>
+    
+
+</ScrollView>

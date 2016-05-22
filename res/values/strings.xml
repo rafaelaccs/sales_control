@@ -10,8 +10,19 @@
     <string name="login_txtPassword">Senha: </string>
     <string name="login_btnLogin">Entrar</string>
     <string name="login_ckbConected">Manter Conectado?</string>
-    
+
     <!-- Validações -->
     <string name="login_validateUser">Usuário Obrigatório</string>
-     <string name="login_validatePasword">Senha Obrigatório</string>
+    <string name="login_validatePasword">Senha Obrigatório</string>
+
+    <!-- Mensages -->
+    <string name="msg_login_wrong">Usuário e/ou senha inválido.</string>
+    <string name="title_activity_cad_user">CadUserActivity</string>
+    <string name="hello_world">Hello world!</string>
+    
+    <!-- Users -->
+    <string name="user_txtName">Nome: </string>
+    <string name="user_txtLogin">Login: </string>
+    <string name="user_txtPassword">Senha: </string>
+
 </resources>

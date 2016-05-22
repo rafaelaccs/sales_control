@@ -41,7 +41,7 @@
     <CheckBox 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/login_ckbConectado"
+        android:id="@+id/login_ckbConected"
         android:text="@string/login_ckbConected"
         android:layout_marginBottom="10dp"
         />
@@ -54,7 +54,7 @@
         android:background="#333"
         android:textColor="#FFF"
         android:textStyle="bold"
-        android:onClick="logar"
+        android:onClick="login"
         />
 	</LinearLayout>
 </ScrollView>
