@@ -10,7 +10,7 @@ import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import dao.UserDao;
-import util.Mensage;
+import util.Mensagem;
 
 public class LoginActivity extends Activity {
 	private EditText edtUser, edtPassword;
@@ -68,7 +68,7 @@ public class LoginActivity extends Activity {
 				CallMainActivity();
 			}else{
 				//Error Mensage
-				Mensage.Msg(this, getString(R.string.msg_login_wrong));
+				Mensagem.Msg(this, getString(R.string.msg_login_wrong));
 			}
 		}
 	}
