@@ -25,9 +25,9 @@ public class CadUserActivity extends Activity {
 		
 		userDao = new UserDao(this);
 		
-		edtName = (EditText)findViewById(R.id.user_edtName);
-		edtLogin = (EditText)findViewById(R.id.user_edtLogin);
-		edtPassword = (EditText)findViewById(R.id.user_edtPassword);
+		edtName = 		(EditText)	findViewById(R.id.user_edtName);
+		edtLogin = 		(EditText)	findViewById(R.id.user_edtLogin);
+		edtPassword = 	(EditText)	findViewById(R.id.user_edtPassword);
 	}
 	
 	@Override

@@ -27,10 +27,11 @@
     <string name="message_register">Registro cadastrado com sucesso!</string>
     <string name="message_update">Registro atualizado com sucesso!</string>
     <string name="message_erro">Erro ao salvar!</string>
-    
+
     <!-- Users -->
     <string name="user_txtName">Nome: </string>
     <string name="user_txtLogin">Login: </string>
     <string name="user_txtPassword">Senha: </string>
+    <string name="title_activity_users">Users</string>
 
 </resources>
