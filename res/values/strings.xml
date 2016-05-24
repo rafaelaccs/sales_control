@@ -7,6 +7,7 @@
     <string name="save">Salvar</string>
     <string name="exclude">Excluir</string>
     <string name="exit">Sair</string>
+    <string name="users">Usuários</string>
 
     <!-- Login -->
     <string name="login_txtUser">Usuário: </string>
