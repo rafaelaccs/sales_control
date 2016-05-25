@@ -33,5 +33,6 @@
     <string name="user_txtLogin">Login: </string>
     <string name="user_txtPassword">Senha: </string>
     <string name="title_activity_users">Users</string>
+    <string name="list_users">Lista de Usuários</string>
 
 </resources>

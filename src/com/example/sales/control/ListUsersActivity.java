@@ -1,23 +1,40 @@
 package com.example.sales.control;
 
+import java.util.List;
+
+import adapter.UserAdapter;
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ListView;
+import dao.UserDao;
+import model.User;
 
-public class MainActivity extends Activity {
+public class ListUsersActivity extends Activity {
+	
+	private ListView list;
+	private List<User> userList;
+	private UserAdapter userAdapter;
+	private UserDao userDAO;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
+		setContentView(R.layout.activity_list_users);
+		
+		userDAO 	= new UserDao(this);
+		userList 	= userDAO.listUser();
+		userAdapter = new UserAdapter(this, userList);
+		
+		list = (ListView)findViewById(R.id.listUsers);
+		list.setAdapter(userAdapter);
 	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.main, menu);
+		getMenuInflater().inflate(R.menu.list_users, menu);
 		return true;
 	}
 
@@ -27,9 +44,8 @@ public class MainActivity extends Activity {
 		// automatically handle clicks on the Home/Up button, so long
 		// as you specify a parent activity in AndroidManifest.xml.
 		int id = item.getItemId();
-		
-		if (id == R.id.action_list_users) {
-			startActivity(new Intent(this, ListUsersActivity.class));
+		if (id == R.id.action_settings) {
+			return true;
 		}
 		return super.onOptionsItemSelected(item);
 	}

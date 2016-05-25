@@ -34,6 +34,13 @@
             android:name=".Users"
             android:label="@string/title_activity_users" >
         </activity>
+        <activity
+            android:name=".ListUsersActivity"
+            android:label="@string/users" >
+            <meta-data 
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
+        </activity>
     </application>
 
 </manifest>

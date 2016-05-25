@@ -19,15 +19,15 @@ public class DataBaseHelper extends SQLiteOpenHelper{
 		// TODO Auto-generated method stub
 		//Table Users
 		db.execSQL("CREATE TABLE USERS(_ID INTEGER PRIMARY KEY AUTOINCREMENT, "
-				+ "NAME TEXT NOT NULL, LOGIN TEXT NOT NULL, PASSWORD TEXT NOT NULL)");
+				+ "NAME TEXT NOT NULL, LOGIN TEXT NOT NULL, PASSWORD TEXT NOT NULL, "
+				+ "CREATED_AT TEXT)");
 		
 		//Table Tasks
 		db.execSQL("CREATE TABLE TASKS(_ID INTEGER PRIMARY KEY AUTOINCREMENT, "
-				+ "TASKS TEXT NOT NULL, DATE_CREATE DATETIME DEFAULT CURRENT_TIMESTAMP, "
-				+ "DATE_COMPLETED DATETIME)");
+				+ "TASKS TEXT NOT NULL, DATE_CREATE TEXT, DATE_COMPLETED TEXT)");
 		
 		//Register a User
-		db.execSQL("INSERT INTO USERS(NAME, LOGIN, PASSWORD) VALUES('Admin', 'admin', '123')");
+		db.execSQL("INSERT INTO USERS(NAME, LOGIN, PASSWORD, CREATED_AT) VALUES('Admin', 'admin', '123', '1/05/2016')");
 	}
 
 	@Override
@@ -42,9 +42,10 @@ public class DataBaseHelper extends SQLiteOpenHelper{
 		public static final String NAME = "name";
 		public static final String LOGIN = "login";
 		public static final String PASSWORD = "password";
+		public static final String CREATED_AT = "created_at";
 		
 		public static final String [] COLUNAS = new String [] {
-				_ID, NAME, LOGIN, PASSWORD
+				_ID, NAME, LOGIN, PASSWORD, CREATED_AT
 		};
 	}
 	

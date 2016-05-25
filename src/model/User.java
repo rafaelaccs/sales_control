@@ -5,14 +5,16 @@ public class User {
 	private String name;
 	private String login;
 	private String password;
+	private String created_at;
 	
 	public User(){}
 	
-	public User(Integer _id, String name, String login, String password){
+	public User(Integer _id, String name, String login, String password, String created_at){
 		this._id = _id;
 		this.name = name;
 		this.login = login;
 		this.password = password;
+		this.created_at = created_at;
 	}
 
 	public Integer get_id() {
@@ -46,4 +48,13 @@ public class User {
 	public void setPassword(String password) {
 		this.password = password;
 	}
+	
+	public String getCreated_at() {
+		return created_at;
+	}
+
+	public void setCreated_at(String created_at) {
+		this.created_at = created_at;
+	}
+
 }

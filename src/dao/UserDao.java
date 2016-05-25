@@ -29,7 +29,8 @@ public class UserDao {
 				cursor.getInt(cursor.getColumnIndex(DataBaseHelper.Users._ID)),
 				cursor.getString(cursor.getColumnIndex(DataBaseHelper.Users.NAME)),
 				cursor.getString(cursor.getColumnIndex(DataBaseHelper.Users.LOGIN)),
-				cursor.getString(cursor.getColumnIndex(DataBaseHelper.Users.PASSWORD	))
+				cursor.getString(cursor.getColumnIndex(DataBaseHelper.Users.PASSWORD)),
+				cursor.getString(cursor.getColumnIndex(DataBaseHelper.Users.CREATED_AT))
 				);
 		return model;
 	}
@@ -53,6 +54,7 @@ public class UserDao {
 		values.put(DataBaseHelper.Users.NAME, user.getName());
 		values.put(DataBaseHelper.Users.LOGIN, user.getLogin());
 		values.put(DataBaseHelper.Users.PASSWORD, user.getPassword());
+		values.put(DataBaseHelper.Users.CREATED_AT, user.getCreated_at());
 		
 		if(user.get_id() != null){
 			return getDatabase().update(DataBaseHelper.Users.TABELA, values, 
